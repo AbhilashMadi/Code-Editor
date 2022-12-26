@@ -6,12 +6,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
   width: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(225, 225, 225);
+  background: rgb(178, 178, 178);
   border-radius: 4px;
 }
 
@@ -20,7 +24,11 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(183, 183, 183);
+  background: rgb(192, 192, 192);
+}
+
+iframe {
+  resize: vertical !important;
 }
 
 .panel-top {
@@ -37,7 +45,7 @@
   flex-basis: 0;
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;
+  padding: 0.4rem;
   background-color: hsl(225deg, 6%, 25%);
 }
 

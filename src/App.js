@@ -68,7 +68,7 @@ const App = () => {
           height="100%"
           className="output-panel"
           srcDoc={srcDoc}
-        />
+        ></iframe>
       </div>
     </Fragment>
   );
