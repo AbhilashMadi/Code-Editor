@@ -1,0 +1,3 @@
+export const welcomeHtml = "<h1>lets build something great!</h1>";
+export const welcomeCss =
+  " body{ height: 100%;} body{ display: flex;align-items: center; justify-content: center;font-family: monospace; margin-top:230px;} h1{ animation: typing-text 2s steps(24), blink 0.5s infinite alternate; overflow: hidden;white-space: nowrap; border-right: 3px solid #000;}@keyframes typing-text{from{width: 0;} to{width: 24ch}} @keyframes blink{from{border-color: transparent;}to{border-color: #000;}}";

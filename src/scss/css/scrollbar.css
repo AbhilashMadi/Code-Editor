@@ -1,0 +1,16 @@
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(225, 225, 225);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(183, 183, 183);
+}/*# sourceMappingURL=scrollbar.css.map */

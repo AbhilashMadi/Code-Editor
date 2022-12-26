@@ -1,5 +1,100 @@
-*, *::before, *::after {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+*,
+*::before,
+*::after {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(225, 225, 225);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(183, 183, 183);
+}
+
+.panel-top {
+  background-color: #131417 !important;
+}
+
+.panel {
+  height: 50vh;
+  display: flex;
+}
+
+.editor-container {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  background-color: hsl(225deg, 6%, 25%);
+}
+
+.editor-container.collapsed {
+  flex-grow: 0;
+}
+
+.editor-container.collapsed .CodeMirror-scroll {
+  position: absolute;
+}
+
+.editor-title {
+  display: flex;
+  justify-content: space-between;
+  background-color: #252830;
+  color: #e3e4e8;
+  padding: 0.4rem;
+  font-family: "Inter";
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.editor-title .html {
+  color: #f06529;
+  margin-right: 5px;
+}
+.editor-title .css {
+  color: #76daff;
+  margin-right: 5px;
+}
+.editor-title .js {
+  color: #ffdd40;
+  margin-right: 5px;
+}
+
+.CodeMirror {
+  height: 100% !important;
+}
+
+.codemirror-wrapper {
+  flex-grow: 1;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  overflow: hidden;
+}
+
+button {
+  background-color: #d6d6d6;
+  border: none;
+  margin-left: 5px;
+  width: 30px;
+}
+button i {
+  color: #323237;
+}
+
+button:active {
+  scale: 0.98;
 }/*# sourceMappingURL=index.css.map */

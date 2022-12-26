@@ -1,7 +1,89 @@
-@import "./theme.scss";
+*,
+*::before,
+*::after {
+  margin: 0;
+  // padding:0;
+  box-sizing: border-box;
+}
 
-*,*::before, *::after{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+@import "./theme.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import "./scrollbar.scss";
+
+.panel-top {
+  background-color: $black-bg !important;
+}
+
+.panel {
+  height: 50vh;
+  display: flex;
+}
+
+.editor-container {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  background-color: $black-panel;
+}
+
+.editor-container.collapsed {
+  flex-grow: 0;
+}
+
+.editor-container.collapsed .CodeMirror-scroll {
+  position: absolute;
+}
+
+.editor-title {
+  display: flex;
+  justify-content: space-between;
+  background-color: $black-editor;
+  color: $blacken-white;
+  padding: 0.4rem;
+  font-family: "Inter";
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  .html {
+    color: $red;
+    margin-right: 5px;
+  }
+  .css {
+    color: $blue;
+    margin-right: 5px;
+  }
+  .js {
+    color: $yellow;
+    margin-right: 5px;
+  }
+
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.CodeMirror {
+  height: 100% !important;
+}
+
+.codemirror-wrapper {
+  flex-grow: 1;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  overflow: hidden;
+}
+
+button{
+  i{
+    color: $icon-color;
+  }
+  background-color: $btn-bg-white;
+  border: none;
+  margin-left: 5px;
+  width: 30px;
+}
+
+button:active{
+  scale: 0.98;
 }
