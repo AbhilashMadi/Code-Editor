@@ -34,8 +34,6 @@ const App = () => {
  `)
   },250)
 
-  // console.log(html)
-
   return () => clearTimeout(timeout);
  },[html,css,javascript])
 
