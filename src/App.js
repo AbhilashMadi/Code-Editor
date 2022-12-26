@@ -27,7 +27,7 @@ const App = () => {
   const timeout = setTimeout(()=>{
     setSrcDoc( `
  <html>
- <body>${html}</body>
+ <body>${html==="" ? welcomeHtml : html}</body>
  <style>${html === "" ? welcomeCss : css}</style>
  <script>${javascript}</script>
  </html>
