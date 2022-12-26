@@ -36,4 +36,4 @@
 - Documentation [Visit](https://codemirror.net/docs)
 
 ### LIVE DEMO 
-<details><summary></summary><a href="https://codeeditorbuild.netlify.app" target="_blank">Code Editor</a> </details>
+<details><summary>Click Here</summary> <a href="https://codeeditorbuild.netlify.app" target="_blank">Code Editor</a> </details>
